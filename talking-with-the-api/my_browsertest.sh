@@ -1,5 +1,9 @@
 #!/bin/bash
-
+###################################################################
+#
+# IMPORTANT: THIS IS A TECH PREVIEW AND WILL NOT WORK IN YOUR ENV
+#
+###################################################################
 # SYNTHETIC_TEST_ID="TEST_ID_RANDOM_THING"
 
 # echo "Getting Metrics Catalog"\n
@@ -16,37 +20,6 @@
 # curl --request GET \
 #   --url https://INSTANA_INSTANCE/api/synthetics/settings/locations\
 #   --header "authorization: apiToken ${INSTANA_API_TOKEN}"
-
-# CREATE A SIMPLE EXAMPLE
-# curl -k -v -X POST \
-# https://INSTANA_INSTANCE/api/synthetics/settings/tests \
-# -H "authorization: apiToken ${INSTANA_API_TOKEN}" \
-# -H 'content-type: application/json' \
-# -d '{
-#     "label":"Test_SimplePing_ISRA_LORD",
-#     "description":"This is to test a simple ping API",
-#     "applicationId":"YOUR_APPLICATION_PERSPECTIVE_ID",
-#     "active":true,
-#     "testFrequency":1,
-#     "playbackMode":"Simultaneous",
-#     "locations":[
-#         "YOUR_POP_LOCATION"
-#     ],
-#     "configuration":{
-#         "syntheticType":"HTTPAction",
-#         "url":"https://httpbin.org/post",
-#         "operation":"POST",
-#         "headers":{
-#             "Content-Type":"text/plain"
-#         },
-#         "body":"Hello World!",
-#         "validationString":"Hello World!"
-#     },
-#     "customProperties":{
-#         "Team":"DevTeam",
-#         "Purpose":"Demo"
-#     }
-#   }'
 
 # CREATE NEW TEST
 # curl -k -v -X POST \

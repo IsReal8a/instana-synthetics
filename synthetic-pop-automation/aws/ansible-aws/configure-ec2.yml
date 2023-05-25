@@ -1,0 +1,29 @@
+---
+# Configure Synthetic PoP
+- hosts: synthetic-host
+  become: True
+  gather_facts: True
+  tasks:
+
+    - name: Upgrade all yum packages
+      yum:
+        name: '*'
+        state: latest
+
+    - name: Download k3sup binary
+      get_url:
+        url: https://get.k3sup.dev
+        dest: /usr/local/bin/k3sup.sh
+        owner: root
+        group: root
+        mode: 0755
+
+    - name: Install k3sup binary
+      command: >-
+        sudo install k3sup /usr/local/bin/
+      changed_when: true
+
+    - name: Create k3s cluster
+      command: >-
+        k3sup install --local
+      changed_when: true

@@ -1,0 +1,8 @@
+---
+# vars file for create-ec2-instances
+region_name: 'us-east-1'
+key_name: 'synthetic_pop_keypair'
+ami_id: 'ami-007855ac798b5175e' # Canonical, Ubuntu, 22.04 LTS, amd64 jammy image build on 2023-03-25
+instance_type: 't2.micro'
+instance_name: 'synthetic-host'
+env: 'sandbox'

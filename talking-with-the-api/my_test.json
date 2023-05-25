@@ -1,0 +1,20 @@
+{
+    "label":"Login Selenium",
+    "description":"Selenium test by Israel Ochoa",
+    "active":true,
+    "testFrequency":10,
+    "playbackMode":"Simultaneous",
+    "locations":[
+        "Insert_Your_Location_1",
+        "Insert_Your_Location_2"
+    ],
+    "configuration":{
+        "script":"INSERT_YOUR_ESCAPED_JSON_FROM_SELENIUM_IDE",
+        "syntheticType":"WebpageScript",
+        "browser":"chrome",
+        "timeout":"5m",
+        "retries":0,
+        "retryInterval":10,
+        "recordVideo":false
+    }
+}

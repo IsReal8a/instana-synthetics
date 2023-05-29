@@ -7,6 +7,6 @@ The main purpose of this repo is to share with you, the reader, how can you talk
 
 That folder contains "from the cave" examples on how to use the [Synthetics OpenAPI](https://instana.github.io/openapi/#tag/Synthetic-Settings)
 
-## Synthetic PoP Auto
+## Synthetic PoP Automation
 
 Folder that contains the not so pretty ways to deploy a Point Of Presence in the Cloud.

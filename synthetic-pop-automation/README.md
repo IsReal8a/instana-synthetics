@@ -1,5 +1,7 @@
 # Synthetic PoP Automation
 
+**PLEASE** use the AWS Terraform approach, the rest is experimental.
+
 ## Disclaimer
 This is an effort for those who can't wait.
 

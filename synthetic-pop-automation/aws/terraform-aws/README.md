@@ -76,6 +76,10 @@ Then you can use these commands on daily basis
 
 `terraform apply`
 
+REMEMBER to always run this command if you don't need the PoP anymore
+
+`terraform destroy`
+
 ## SSH connection
 
 Connect with:
